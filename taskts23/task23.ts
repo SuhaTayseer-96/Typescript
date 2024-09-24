@@ -1,6 +1,6 @@
 // 1 
 let num: number = 3;
-
+debugger;
 if (num % 2 === 0) {
   console.log(`${num} is even.`);
 } else {
@@ -45,4 +45,15 @@ for (let i = 0; i < users.length; i++) {
 
 if (oldestAdmin) {
   console.log(`The oldest admin is ${oldestAdmin.name}.`);
+}
+
+let s = document.getElementById("t") as HTMLElement; 
+if (s) { 
+  s.innerHTML = `
+  <div> odd and even : ${num} </div>
+  <div> prodPrices ${prodPrices} </div>
+  <div> oldestAdmin ${oldestAdmin} </div>
+  `;
+} else {
+  console.error('Element with ID "t" not found.');
 }
